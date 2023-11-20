@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="popup.css">
+		<link rel="stylesheet" href="lib/prism.min.css">
+	</head>
+	<body>
+		<div id="main">
+			<div class="header">
+				<h1>View Source</h1>
+				<span id="info-icon">i</span>
+			</div>
+			<code id="source" class="scrollable"></code>
+		</div>
+
+		<div id="about" class="hidden">
+			<div class="header">
+				<h1>About extension</h1>
+				<span id="closeAbout">x</span>
+			</div>
+			<p><b>View Source</b> by <i>TrueWinter</i></p>
+			<hr>
+			<div id="oss" class="scrollable">
+				<h2>Open Source Licenses</h2>
+			</div>
+		</div>
+
+		<script src="lib/prism.min.js"></script>
+		<script src="lib/prism-markup.min.js"></script>
+		<script src="popup.js"></script>
+		<script src="licenses.config.js"></script>
+		<script src="licenses.js"></script>
+	</body>
+</html>

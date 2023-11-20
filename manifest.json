@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "View Source",
+	"version": "1.0",
+	"description": "Allows you to view the page HTML in Firefox for Android.",
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["content.js"]
+	}],
+	"permissions": ["activeTab", "tabs"],
+	"browser_action": {
+		"default_title": "View Source",
+		"default_popup": "popup/popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
